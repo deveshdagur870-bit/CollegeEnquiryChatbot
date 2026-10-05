@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>College Enquiry Chatbot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="chat-container">
+    <div class="chat-header">
+        🎓 College Enquiry Chatbot
+        <div class="chat-subtitle">LLM + RAG + MCP powered assistant</div>
+    </div>
+
+    <div id="messages" class="chat-messages">
+        <div class="bot-message">Namaste! Main aapka College Enquiry Assistant hoon. Admission, fees, courses,
+            hostel, placements — kuch bhi poochiye. Apna roll number bhi bata sakte hain status check karne ke liye
+            (jaise: CS101).</div>
+    </div>
+
+    <div class="chat-input-area">
+        <input type="text" id="userInput" placeholder="Apna sawaal type karein..."
+               onkeydown="if(event.key === 'Enter') sendMessage()">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
